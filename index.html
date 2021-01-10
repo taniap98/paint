@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Paint</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body style="background-color: #F5F5F5;">
+        <div id="toolBar">
+            <div class="section">
+                Pick your color: 
+                <input id="colorPicker" type="color" value="#000000">
+                <div>
+                    <div id="colorsDiv">
+                        <canvas class="colors" style="background-color: #FFFFFF;"></canvas>
+                        <canvas class="colors" style="background-color: #F0F0F0;"></canvas>
+                        <canvas class="colors" style="background-color: #FF80C0;"></canvas>
+                        <canvas class="colors" style="background-color: #FF8000;"></canvas>
+                        <canvas class="colors" style="background-color: #80FF00;"></canvas>
+                        <canvas class="colors" style="background-color: #00FFFF;"></canvas>
+                    </div>
+                    <div id="colorsDiv">
+                        <canvas class="colors" style="background-color: #000000;"></canvas>
+                        <canvas class="colors" style="background-color: #C0C0C0;"></canvas>
+                        <canvas class="colors" style="background-color: #FF0000;"></canvas>
+                        <canvas class="colors" style="background-color: #FFFF00;"></canvas>
+                        <canvas class="colors" style="background-color: #00FF00;"></canvas>
+                        <canvas class="colors" style="background-color: #0000FF;"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                Pick the pen size:  
+                <div>
+                    <div id="sizeDiv">
+                        <canvas class="sizePen" style="background-color: #FFFFFF;"></canvas>
+                        <canvas class="sizePen" style="background-color: #FFFFFF;"></canvas>
+                        <canvas class="sizePen" style="background-color: #FFFFFF;"></canvas>
+                    </div>
+                    <div id="sizeDiv">
+                        <canvas class="sizePen" style="background-color: #FFFFFF;"></canvas>
+                        <canvas class="sizePen" style="background-color: #FFFFFF;"></canvas>
+                        <canvas class="sizePen" style="background-color: #FFFFFF;"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                Pick the pen type:  
+                <div style="margin:10px;">
+                    <div id="sizeDiv">
+                        <img src="media/ellipse.png" id="el" class="penType"/>
+                        <img src="media/line.png" id="ln" class="penType"/>
+                        <img src="media/rectangle.png" id="rect" class="penType" />
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                Pick the background color: 
+                <input id="colorPickerBK" type="color" value="#000000">
+                <div>
+                    <div id="colorsDiv">
+                        <canvas class="colorsBK" style="background-color: #FFFFFF;"></canvas>
+                        <canvas class="colorsBK" style="background-color: #F0F0F0;"></canvas>
+                        <canvas class="colorsBK" style="background-color: #FF80C0;"></canvas>
+                        <canvas class="colorsBK" style="background-color: #FF8000;"></canvas>
+                        <canvas class="colorsBK" style="background-color: #80FF00;"></canvas>
+                        
+                    </div>
+                    <div id="colorsDiv">
+                        <canvas class="colorsBK" style="background-color: #000000;"></canvas>
+                        
+                        <canvas class="colorsBK" style="background-color: #FF0000;"></canvas>
+                        <canvas class="colorsBK" style="background-color: #FFFF00;"></canvas>
+                        <canvas class="colorsBK" style="background-color: #00FF00;"></canvas>
+                        <canvas class="colorsBK" style="background-color: #0000FF;"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="wrapper">
+            <canvas id="backgroundCanvas" ></canvas>
+            <canvas id="finalCanvas" ></canvas>
+            
+            <canvas id="paintCanvas" >
+                Your browser dows not support the canvas elemente!
+            </canvas>    
+            
+        </div>
+        
+
+        <a href="#" download="Untitled">
+            <br> <input id = "btnSave" type="button" value="Save chart">
+        </a>
+
+        <script src="functions.js"></script>
+        <script>
+            pen.load();
+        </script>
+    </body>
+</html>

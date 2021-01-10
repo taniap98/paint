@@ -1,0 +1,46 @@
+
+#colorPicker, #colorPickerBK{
+    width:35px;
+    height: 35px;
+    margin:10px;
+    
+}
+#toolBar{
+    margin:20px;
+    background-color: #FFFFFF;
+    padding:10px;
+    border:1px solid;
+    display: flex;
+    align-items: center;
+   
+}
+.colors,.penType, .colorsBK{
+    width:25px;
+    height:25px;
+    border:1px solid;
+}
+.sizePen{
+    margin:5px;
+    width:50px;
+    height:25px;
+    border:1px solid;
+}
+.section{
+    width:fit-content;
+    display: flex;
+    border-right:1px solid;
+    padding:15px;
+    align-items: center;
+}
+
+#wrapper{
+    position:relative;
+    width:800px;
+    height:800px;
+}
+#paintCanvas,#finalCanvas,#backgroundCanvas{
+    position:absolute; top:0px; left:0px;
+    width:800px;
+    height:800px;
+    border: 1px solid;
+}
